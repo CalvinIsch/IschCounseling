@@ -1,0 +1,203 @@
+<!-- index.html
+		 Calvin Isch and Ben Kahlert
+		 
+		 This is the homepage for IschCounseling.com it features a carousel, buttons, and info
+		 about a company.
+--> 
+
+<!DOCTYPE html>
+<head>
+	<title>Isch Counseling</title>
+	
+	<!-- the different stylesheets allow the website to effectively scale to different screens -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen and (min-width: 800px)" />
+	<link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 321px)" />
+	<link rel="stylesheet" type="text/css" href="mobile1.css" media="screen and (min-width: 321px) and (max-width: 567px)" />
+	<link rel="stylesheet" type="text/css" href="mobile2.css" media="screen and (min-width: 567px) and (max-width: 710px)" />
+	<link rel="stylesheet" type="text/css" href="tablet.css" media="screen and (min-width: 710px) and (max-width: 800px)" />
+	
+	<!-- This creates the carousel for the different screen sizes-->
+	<html lang = "en">
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<style media="screen and (max-width: 321px)">
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 75%;
+		height: 185px;
+		margin: auto;
+	}
+  </style>
+  <style media="screen and (min-width: 321px) and (max-width: 567px)">
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 75%;
+		height: 235px;
+		margin: auto;
+	}
+	</style>
+	<style media="screen and (min-width: 567px) and (max-width: 710px)">
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 75%;
+		height: 270px;
+		margin: auto;
+	}
+  </style>
+  <style media="screen and (min-width: 710px) and (max-width: 800px)">
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 75%;
+		height: 290px;
+		margin: auto;
+	}
+  </style>
+  <style media="screen and (min-width: 800px)">
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 75%;
+		height: 330px;
+		margin: auto;
+	}
+  </style>
+  </html>
+</head>
+<html>
+	<body>
+	<div id="header">
+		<h1 style ="font-family:Palatino Linotype, Book Antiqua, Palatino, serif">Isch Counseling Services, LLC</h1>
+			<div id="headerBar">
+				<table>
+					<!--- The buttons that link to different pages. -->
+					<tr>
+						<form action="index.html">
+							<input type="submit" alt="home" id="selectedButton" value="HOME">
+						</form>
+					</tr>
+					<tr>
+						<form action="MyApproach.html">
+							<input type="submit" alt="aboutMe" id="homeButton" value="MY APPROACH">
+						</form>
+					</tr>
+					<tr>
+						<form action="Services.html">
+							<input type="submit" alt="servicesProvided" id="homeButton" value="SERVICES">
+						</form>
+					</tr>
+					<tr>
+						<form action="AboutEMDR.html">
+							<input type="submit" alt="treatmentApproach" id="homeButton" value="ABOUT EMDR">
+						</form>
+					</tr>
+					<tr>
+						<form action="Resources.html">
+							<input type="submit" alt="location" id="homeButton" value="RESOURCES">
+						</form>
+					</tr>
+					<tr>
+						<form action="Contact.html">
+							<input type="submit" alt="contact" id="homeButton" value="CONTACT">
+						</form>
+					</tr>
+				</table>
+			</div>
+		<p> </p>
+	</div>
+	<div>
+		<p id="layoutdims">A part of <a style="color:gray;" href="http://www.lifetransitionscounselingcenter.net/index.html">Life Transitions Counseling Center. </a> </p>
+	</div>
+	</html>
+	<html lang="en">
+	<div id="MainPicture">
+	<div class="container">
+	  <br>
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		  <li data-target="#myCarousel" data-slide-to="1"></li>
+		  <li data-target="#myCarousel" data-slide-to="2"></li>
+		  <li data-target="#myCarousel" data-slide-to="3"></li>
+		  <li data-target="#myCarousel" data-slide-to="4"></li>
+		  <li data-target="#myCarousel" data-slide-to="5"></li>
+		  <li data-target="#myCarousel" data-slide-to="6"></li>
+		  <li data-target="#myCarousel" data-slide-to="7"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+		  <div class="item active">
+			<img src="Outside.jpg" alt="Outside">
+		  </div>
+
+		  <div class="item">
+			<img src="Jeremiah.jpg" alt="Jeremiah">
+		  </div>
+		
+		  <div class="item">
+			<img src="WaitingRoom.jpg" alt="WaitingRoom">
+		  </div>
+
+		  <div class="item">
+			<img src="Timothy.jpg" alt="Timothy">
+		  </div>
+		  
+		  <div class="item">
+			<img src="Office.jpg" alt="Office">
+		  </div>
+		  
+		  <div class="item">
+			<img src="Philippians2.jpg" alt="Philippians2">
+		  </div>
+		  
+		  <div class="item">
+			<img src="Location.jpg" alt="Location">
+		  </div>
+		  
+		  <div class="item">
+			<img src="John10.jpg" alt="John10">
+		  </div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+	  </div>
+	  </html>
+<html>
+</div>
+	</div>
+	<div class="colmask threecol">
+		<div class="colmid">
+			<!-- information about the company -->
+			<h1> Gregory Isch </h1>
+			<img src="Greg.jpg" alt="Greg" align="Left" style= "padding:0px 20px 0px 20px">
+			<p style= "color:black; padding:20px 20px 0px 20px;"> Welcome to my website!  I hope you find the information and resources valuable! </p>
+			<p> Gregory Isch, MA, LMHC, NCC </p>
+
+<p style= "color:black; padding:0px 20px 0px 20px;"> <b> My Training: </b> I hold a Master’s Degree from Indiana Wesleyan University in Clinical Mental Health Counseling with a certificate in Addictions Counseling.  I also hold a Master’s Degree from Liberty University in Counseling.  Additionally, I have a Bachelor’s Degree from IPFW in Business Management and Marketing with a minor in Psychology.  I have also received training in EMDR and am currently working toward EMDR certification with Dr. Barb Hensley (see http://www.cincinnatitraumaconnection.com/dr.-hensley.html ). I am a member of EMDRIA (EMDR International Association). I went into private practice and formed Isch Counseling Services, LLC and joined Dr. Michelle Miller, Psychologist, at Life Transitions Counseling Center in Fort Wayne in March, 2015
+(see www.lifetransitionscounselingcenter.net ).  Prior to this, I have counseled at a not-for-profit private practice, a public school system, and a local church.</p>
+ 
+<p style= "color:black; padding:0px 20px 0px 20px;">MA = Master’s of Arts Degree</p>
+<p style= "color:black; padding:0px 20px 0px 20px;">LMHC = Licensed Mental Health Counselor in the State of Indiana, License #39002613A</p>
+<p style= "color:black; padding:0px 20px 0px 20px;">NCC = Nationally Certified Counselor by the National Board for Certified Counselors (NBCC)</p>
+ 
+<p style= "color:black; padding:0px 20px 0px 20px;"><b> About me: </b> My personal passions include natural approaches to health and wellness, nutrition and food, and exercise. Prior to my counseling career, I worked in the banking industry for 11 years.  I have been married to my high school sweetheart for 21 years, and we have 6 children.  I enjoy spending time with my family, traveling, playing sports, and learning. </p>
+		</div>
+	</div>
+	<div id="footer">
+		<p style="float: center;"> Created by Calvin Isch and Ben Kahlert </p>
+	</div>
+
+	</body>
+</html>
